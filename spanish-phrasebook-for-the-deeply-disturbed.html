@@ -168,11 +168,10 @@
       let touchStart = 0;
 
       function step() { return phone.matches ? 1 : 2; }
-      function lastStart() { return phone.matches ? pages.length - 1 : Math.max(0, pages.length - 2); }
+      function lastStart() { return pages.length - 1; }
       function showPages() {
         const amount = step();
         current = Math.min(Math.max(0, current), lastStart());
-        if (!phone.matches && current % 2) current -= 1;
         pages.forEach((page, index) => {
           const visible = index >= current && index < current + amount;
           page.hidden = !visible;
