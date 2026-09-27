@@ -60,6 +60,7 @@
     @media(max-width:700px){.reader-shell{width:min(100% - 22px,620px);padding-top:16px}.reader-bar{margin-bottom:18px}.byline{display:none}.book-stage{min-height:0}.spread{display:block}.spread::before{display:none}.page{display:none;min-height:calc(100vh - 190px);padding:38px 30px 52px;background:linear-gradient(90deg,var(--paper),#f6eedf 96%)}.page.is-mobile-page{display:block}.page p{font-size:clamp(.94rem,3.7vw,1.04rem);line-height:1.58}.title-page.is-mobile-page{display:flex}.reader-controls{gap:12px}.nav-button{min-width:90px}.hint{display:none}}
     @media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;animation:none!important;transition:none!important}}
   </style>
+  <link rel="stylesheet" href="free-read-scroll.css">
 </head>
 <body>
   <main class="reader-shell">
@@ -69,6 +70,7 @@
     </nav>
     <div class="book-stage">
       <article class="book" id="book">
+
         <div class="cover-view">
           <div class="cover">
             <img src="images/spanish-phrasebook-cover.jpg" alt="A waiter dancing with a Cornish hen in an old café">
@@ -79,7 +81,7 @@
 
         <div class="spread-view">
           <div class="spread" id="spread" aria-live="polite">
-            
+
             <section class="page" data-page="1">
               <div class="page-inner">
                 <p class="lead">I’m originally, and still in my soul, a New Yorker, but I’ve been living in Spain for the past fifteen years. Even after all that time, small children point and laugh at me when I speak Spanish, and adults can barely conceal their looks of pity. But there are people worse off than I, and therein lies the motive for this little talk.</p>
