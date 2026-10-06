@@ -1,0 +1,239 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Biography of Peter Mangiaracina, author of psychological mystery, surreal fiction, and dark comedy.">
+  <title>About Peter Mangiaracina | Rabid Scribe</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --plum: #342833;
+      --plum-soft: #493744;
+      --paper: #f5eee6;
+      --ink: #2b2228;
+      --muted: #74646c;
+      --line: #d8c8bd;
+      --accent: #b78589;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      color: var(--ink);
+      background: var(--paper);
+      font-family: "DM Sans", system-ui, sans-serif;
+      font-size: 17px;
+      line-height: 1.75;
+    }
+    .hero {
+      color: var(--paper);
+      background:
+        radial-gradient(circle at 85% 12%, rgba(183, 133, 137, .21), transparent 32rem),
+        linear-gradient(135deg, #2f242e, var(--plum));
+      padding: 1.4rem 1.5rem 5.8rem;
+    }
+    .topline, .hero-inner, .essay { max-width: 760px; margin: 0 auto; }
+    .topline {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-bottom: 4.8rem;
+      font-size: .75rem;
+      font-weight: 600;
+      letter-spacing: .15em;
+      text-transform: uppercase;
+    }
+    .topline a { color: inherit; text-decoration: none; }
+    .topline a:hover, .topline a:focus-visible { color: #efc9ca; }
+    .site-name { opacity: .74; }
+    .eyebrow {
+      margin: 0 0 .8rem;
+      color: #e5b5b7;
+      font-size: .75rem;
+      font-weight: 600;
+      letter-spacing: .18em;
+      text-transform: uppercase;
+    }
+    h1, h2 { font-family: "Fraunces", Georgia, serif; font-weight: 500; }
+    h1 {
+      max-width: 680px;
+      margin: 0;
+      font-size: clamp(3.2rem, 10vw, 6.5rem);
+      line-height: .97;
+      letter-spacing: -.045em;
+    }
+    .dek {
+      max-width: 36rem;
+      margin: 1.55rem 0 0;
+      color: #eaded7;
+      font-family: "Fraunces", Georgia, serif;
+      font-size: clamp(1.12rem, 2.6vw, 1.48rem);
+      line-height: 1.45;
+    }
+    main { padding: 0 1.5rem 5.5rem; }
+    .essay {
+      position: relative;
+      margin-top: -2.35rem;
+      padding: clamp(2rem, 6vw, 4.8rem) clamp(1.25rem, 6vw, 5.5rem) 3.25rem;
+      background: #fffaf4;
+      box-shadow: 0 1.3rem 3rem rgba(32, 21, 30, .12);
+    }
+    .essay p { margin: 0 0 1.65rem; }
+    .essay .lead {
+      margin-bottom: 3rem;
+      color: #3c2e37;
+      font-family: "Fraunces", Georgia, serif;
+      font-size: clamp(1.24rem, 2.8vw, 1.58rem);
+      line-height: 1.55;
+    }
+    figure { margin: 0; }
+    .photo-break {
+      width: min(100%, 30rem);
+      margin: 2.7rem auto 3.35rem;
+    }
+    .photo-break img, .photo-pair img {
+      display: block;
+      width: 100%;
+      object-fit: cover;
+      background: #e4d8cf;
+    }
+    .photo-break img { aspect-ratio: 4 / 5; }
+    .photo-break figcaption, .photo-pair figcaption {
+      margin-top: .6rem;
+      color: var(--muted);
+      font-size: .72rem;
+      font-style: italic;
+      line-height: 1.4;
+    }
+    .photo-pair {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem;
+      margin: 2.8rem 0 3.4rem;
+    }
+    .photo-pair figure:nth-child(1) { margin-top: 2.4rem; }
+    .photo-pair img { aspect-ratio: 1 / 1; }
+    .photo-wide {
+      width: min(100%, 34rem);
+      margin: 2.8rem auto 3.25rem;
+    }
+    .photo-wide img {
+      display: block;
+      width: 100%;
+      aspect-ratio: 16 / 9;
+      object-fit: cover;
+      background: #e4d8cf;
+    }
+    .section-label {
+      display: flex;
+      align-items: center;
+      gap: .85rem;
+      margin: 3.5rem 0 1.15rem;
+      color: var(--muted);
+      font-size: .71rem;
+      font-weight: 600;
+      letter-spacing: .16em;
+      line-height: 1.2;
+      text-transform: uppercase;
+    }
+    .section-label::after { content: ""; flex: 1; height: 1px; background: var(--line); }
+    em { font-style: italic; }
+    .end-rule { width: 3.6rem; height: 2px; margin: 3.3rem 0 0; background: var(--accent); }
+    .footer {
+      max-width: 760px;
+      margin: 2.25rem auto 0;
+      color: var(--muted);
+      font-size: .82rem;
+      text-align: center;
+    }
+    .footer a { color: var(--plum-soft); font-weight: 600; text-decoration-thickness: 1px; text-underline-offset: .18em; }
+    @media (max-width: 560px) {
+      body { font-size: 16px; }
+      .hero { padding: 1.1rem 1.15rem 4.7rem; }
+      .topline { padding-bottom: 3.8rem; letter-spacing: .1em; }
+      .site-name { display: none; }
+      main { padding: 0 1rem 3.5rem; }
+      .essay { margin-top: -1.65rem; padding: 1.75rem 1.25rem 2.4rem; }
+      .essay .lead { margin-bottom: 2.5rem; }
+      .section-label { margin-top: 2.9rem; }
+      .photo-break { margin: 2.1rem auto 2.8rem; }
+      .photo-pair { gap: .7rem; margin: 2.3rem 0 2.9rem; }
+      .photo-pair figure:nth-child(1) { margin-top: 1.5rem; }
+    }
+  </style>
+</head>
+<body>
+  <header class="hero">
+    <div class="topline">
+      <a href="index.html">← Rabid Scribe</a>
+      <span class="site-name">Peter Mangiaracina · Author</span>
+    </div>
+    <div class="hero-inner">
+      <p class="eyebrow">About Peter</p>
+      <h1>Peter Mangiaracina</h1>
+      <p class="dek">Writer of psychological mystery, surreal fiction, and dark comedy.</p>
+    </div>
+  </header>
+  <main>
+    <article class="essay">
+      <p class="lead">Peter Mangiaracina began writing in New York while he was still in high school, although “writing” at the time meant producing surreal plays, acting in them, and occasionally directing them. This seemed perfectly reasonable.</p>
+
+      <p>Those early plays were influenced by Harold Pinter, Sam Shepard, and the lyrics of Bob Dylan, and established several habits that have proved difficult to get rid of: an attraction to uncomfortable situations, people who don’t quite understand one another, dialogue that occasionally behaves badly, and the suspicion that ordinary reality could use some adjustment.</p>
+
+      <figure class="photo-break">
+        <img src="images/biography/peter-orange.jpg" alt="Peter Mangiaracina">
+      </figure>
+
+      <p class="section-label">Fiction and psychology</p>
+      <p>Peter is a writer of offbeat, psychological, and surreal fiction. His work explores the tension between reality and perception, often placing characters with fractured inner lives into situations that test their humanity, agency, and sense of self. Mental illness, altered perception, obsession, identity, death, and the elaborate stories people tell themselves in order to keep functioning turn up frequently. So do jokes. Sometimes at inappropriate moments.</p>
+
+      <p>His academic background in psychology and English literature fed an already unhealthy interest in why people behave as they do, particularly when what they do makes perfect sense to them and absolutely no sense to anyone else. Psychology remains central to much of his fiction, but he is less interested in diagnostic labels than in what happens when a person’s private version of reality collides with everybody else’s.</p>
+
+      <p>Over time, his love of mystery fiction led him to novel writing, drawing influence from the sharp, character-driven dialogue of Jonathan Kellerman and Lawrence Block. He considers dialogue one of his strongest skills. While his novels follow the structure of classic mystery thrillers, his short fiction tends toward psychological horror, frequently employing surreal, hallucinatory imagery, existential dread, and dark comedy. He also admires Stephen King’s ability to uncover horror in the ordinary.</p>
+
+      <p>The division between the two forms suits him. In the novels, somebody usually has to figure out what happened and why. In the short stories, figuring out what happened may be part of the problem.</p>
+
+      <p class="section-label">Influences</p>
+      <p>Peter’s work is deeply influenced by the Surrealists and Dada artists, particularly Salvador Dalí, René Magritte, and Marcel Duchamp, whose distortions of reality and challenges to perception mirror his own narrative approach, blurring the line between the rational and the absurd. Perfectly ordinary reality has never seemed quite sufficient.</p>
+
+      <p>Music has been another persistent influence, particularly Frank Zappa and Robert Fripp and King Crimson. Zappa’s irreverence, collisions between high and low culture, and refusal to behave properly have always appealed to him, as has Fripp’s precision and willingness to make work that does not necessarily care whether the audience finds it easy.</p>
+
+      <div class="photo-pair" aria-label="Photographs">
+        <figure>
+          <img src="images/biography/dog-at-home.jpg" alt="Black-and-white dog at home">
+        </figure>
+        <figure>
+          <img src="images/biography/peter-and-dog.jpg" alt="Peter Mangiaracina with a black-and-white dog">
+        </figure>
+      </div>
+
+      <p class="section-label">The Canary Islands and the novels</p>
+      <p>An American living in Spain, Peter teaches English to adult professionals, particularly doctors. He helps them refine conversational skills, presentations, and academic writing. After decades of teaching, he remains fascinated by the difference between knowing a language and actually having something to say in it. He strongly favors the latter.</p>
+
+      <p>He was born in New York and eventually made his way to Las Palmas de Gran Canaria, in Spain’s Canary Islands, where he now lives and writes. The islands also became the setting for his first Trep Racine novel, <em>The Canary Killer</em>.</p>
+
+      <figure class="photo-wide">
+        <img src="images/biography/peter-under-tree.jpg" alt="Peter Mangiaracina outdoors beneath a tree">
+      </figure>
+
+      <p>In <em>The Canary Killer</em>, New York psychotherapist Trep Racine relocates to Las Palmas after the death of his wife and becomes involved in the investigation of a series of murders. The novel combines Peter’s interests in psychology, identity, outsiders, moral ambiguity, and the peculiar experience of trying to understand a place while never being entirely certain that the place wants to understand you. <em>The Canary Killer</em> has been accepted by Next Chapter Publishing and is scheduled for publication in 2027.</p>
+
+      <p>He is currently working on a second Trep Racine novel, <em>A Hanging in Suite 221</em>, which returns Trep to New York and begins with the discovery of a woman hanging from the ceiling of his newly renovated psychotherapy office. This is generally considered a poor way to begin the working day.</p>
+
+      <p>Peter’s short fiction occupies somewhat less orderly territory. His stories have appeared in publications and anthologies including <em>The Morgue Magazine</em>, <em>Stygian Lepus</em>, <em>The Brussels Review</em>, <em>Bewildering Stories</em>, <em>Flash Phantoms</em>, and <em>Sulfur Surreal Jungle</em>. His stories include “Tunnel of Love,” “Tiny Acts of Vengeance,” “Burn Patterns,” and “Irresistible,” the last of which was selected for <em>The Rabbit Hole Anthology IX</em>.</p>
+
+      <p class="section-label">A few unusual things</p>
+      <p>A few unusual things about Peter: <em>Lust for Life</em> by Irving Stone sparked his desire to become an artist, while the existential thinkers Søren Kierkegaard, Jean-Paul Sartre, and Friedrich Nietzsche, along with <em>The Origin of Consciousness in the Breakdown of the Bicameral Mind</em> by Julian Jaynes and <em>The Denial of Death</em> by Ernest Becker, shaped his fascination with consciousness, responsibility, and the fragile narratives people use to survive.</p>
+
+      <p>Becker in particular left a mark. The idea that human beings spend much of their lives constructing elaborate defenses against the knowledge that they are going to die is both philosophically disturbing and, from a writer’s point of view, extremely useful.</p>
+
+      <p>After all of those influences, Peter somehow ended up writing stories about murderers, psychiatrists, damaged people, unreliable realities, existential terror, unfortunate misunderstandings, and the occasional man with a duck on his head. In retrospect, the warning signs were probably there from the beginning.</p>
+      <div class="end-rule" aria-hidden="true"></div>
+    </article>
+    <p class="footer"><a href="index.html">Return to Rabid Scribe</a></p>
+  </main>
+</body>
+</html>
