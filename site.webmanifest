@@ -1,0 +1,19 @@
+{
+  "name": "Rabid Scribe",
+  "short_name": "Rabid Scribe",
+  "icons": [
+    {
+      "src": "icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "theme_color": "#493843",
+  "background_color": "#493843",
+  "display": "browser"
+}
